@@ -5,10 +5,10 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-gray-200 px-4 py-3 md:px-8">
+    <nav className="bg-light border-b border-gray-200 px-4 py-3 md:px-8">
       <div className="flex justify-between items-center mx-auto max-w-7xl">
         <div className="flex items-center">
-          <span className="text-xl font-bold text-blue-600">MyApp</span>
+          <span className="text-xl font-bold text-blue-600">Elvis Restaino</span>
         </div>
         <div className="md:hidden">
           <button
@@ -21,10 +21,10 @@ export const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden md:flex space-x-6">
-          <a href="/about" className="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
-          <a href="/signin" className="text-gray-700 hover:text-blue-600 font-medium">Sign In</a>
-          <a href="/signup" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-medium">Sign Up</a>
+        <div className="hidden items-center md:flex space-x-6">
+          <a href="/about" className="text-gray-700 hover:text-blue-600 font-large font-bold">About Us</a>
+          <a href="/signin" className="text-gray-700 hover:text-blue-600 font-large font-bold">Sign In</a>
+          <a href="/signup" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-large font-bold">Sign Up</a>
         </div>
       </div>
       {/* Mobile Menu */}

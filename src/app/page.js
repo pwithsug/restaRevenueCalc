@@ -9,7 +9,7 @@ export default function Pricing() {
     router.push("/free");
   };
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#547792]  text-[#183a4d]">
+    <div className="min-h-screen flex flex-col items-center bg-primary  text-dark">
       {/* Headline */}
       <div style={{backgroundImage: "url('/images/111.png')", backgroundSize: "cover", backgroundPosition: "center", width: "100vw"}}>
         <h1 className=" text-5xl font-extrabold text-center mt-30 mb-12 tracking-tight">
@@ -118,7 +118,6 @@ export default function Pricing() {
           <button className=" text-2xl font-bold rounded px-5 py-2 mt-auto shadow  transition border-2 border-[#0c1425] ">
             LEARN MORE
           </button>
-          {/* text-[#b23b2a] hover:bg-[#f8faf5] bg-white*/}
         </div>
         {/* Elite */}
         <div className="flex-1 bg-[#1d4d3a] rounded-xl py-10 px-8 flex flex-col items-center shadow-lg shadow-[#0c1425]/50 min-w-[260px] w-full mx-auto text-[#f8faf5] transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
@@ -139,7 +138,6 @@ export default function Pricing() {
           <button className=" text-2xl font-bold rounded px-5 py-2 mt-auto shadow  transition border-2 border-[#0c1425] ">
             LEARN MORE
           </button>
-          {/* text-[#b23b2a] hover:bg-[#f8faf5] bg-white*/}
         </div>
       </div>
       {/* Profile */}
@@ -150,22 +148,22 @@ export default function Pricing() {
           className="w-70 h-70 rounded-full object-cover grayscale border-4 border-[#e3f4fa]"
         />
         <div className="text-center md:text-left">
-          <div className="text-[#183a4d] text-6xl font-bold">
+          <div className="text-[#183a4d] text-4xl font-bold">
             Elvis Restaino
           </div>
-          <div className="text-[#183a4d]/80 text-4xl font-bold">
-            Award-winning designer,
+          <div className="text-[#183a4d]/80 text-3xl font-bold">
+            The best Restaurant Revenue Pro,
             <br />
             30+ years experience
           </div>
         </div>
       </div>
       {/* Login link */}
-      <div className="text-center text-[#183a4d] text-4xl font-bold mb-2">
+      <div className="text-center text-[#183a4d] text-2xl font-bold mb-2">
         Already a member?{" "}
         <a
           href="#"
-          className=" text-5xl underline font-bold hover:text-[#b23b2a]"
+          className=" text-3xl underline font-bold hover:text-[#b23b2a]"
         >
           Log in
         </a>
