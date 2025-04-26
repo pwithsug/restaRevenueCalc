@@ -11,7 +11,7 @@ export default function Pricing() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-primary  text-dark">
       {/* Headline */}
-      <div style={{backgroundImage: "url('/images/111.png')", backgroundSize: "cover", backgroundPosition: "center", width: "100vw"}}>
+      <div className="bg-no-repeat bg-center bg-cover w-full" style={{backgroundImage: "url('/images/111.png')"}}>
         <h1 className=" text-5xl font-extrabold text-center mt-30 mb-12 tracking-tight">
           THE RESTAURANT PROFIT CALCULATOR
         </h1>
@@ -35,8 +35,7 @@ export default function Pricing() {
           </button>
         </div>
       </div>
-      <div className="container mx-auto ">
-        <div className="bg-secondary w-full  px-6 py-10 shadow-md grid grid-cols-3 gap-6">
+        <div className="container bg-secondary w-full  px-6 py-10 shadow-md grid grid-cols-3 gap-6">
           <div className="flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
               <svg
@@ -63,21 +62,45 @@ export default function Pricing() {
             </p>
           </div>
           <div className="flex flex-col items-center">
-            <h2 className="text-2xl font-bold mb-2 text-center">WHAT IT SOLVES?</h2>
-            <p className="text-lg">Find out if your concept is profitable</p>
-            <p className="text-lg">A smart tool for restaurant planning</p>
-            <p className="text-lg">A smart tool for restaurant planning</p>
-            <p className="text-lg">A smart tool for restaurant planning</p>
+            <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              WHAT IT SOLVES? </h2>
+            <p className="text-lg">Our Restaurant Revenue Calculator solves a critical problem for both new and existing restaurant owners: uncertainty in financial planning.
+            This tool empowers owners to visualize their business model by entering simple metrics and instantly receiving a detailed financial forecast.</p>
           </div>
           <div className="flex flex-col items-center">
-            <h2 className="text-2xl font-bold mb-2 text-center">HOW IT WORKS?</h2>
-            <p className="text-lg">Input numbers. Get a 5-year projection.</p>
-            <p className="text-lg">A smart tool for restaurant planning</p>
-            <p className="text-lg">A smart tool for restaurant planning</p>
-            <p className="text-lg">A smart tool for restaurant planning</p>
+          <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              HOW IT WORKS? </h2>
+            <p className="text-lg">Simply enter key details like your restaurant's seating capacity, average customer spend, and monthly expenses into the calculator. The tool instantly generates your projected annual revenue, profit estimates, and break-even year with easy-to-read results</p>
           </div>
         </div>
-      </div>
       {/* Pricing Cards */}
       <div className=" mx-auto  pt-20  flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-8 text-center">UPGRADE FOR MORE FEATURES</h2>
@@ -98,8 +121,10 @@ export default function Pricing() {
             <li>Downloadable report</li>
             <li>Set custom profit margin</li>
           </ul>
-          <button className=" text-2xl font-bold rounded px-5 py-2 mt-auto shadow  transition border-2 border-[#0c1425] ">
-            LEARN MORE
+          <button className="rounded border-2 border-[#0c1425] mt-auto inline-block px-5  overflow-hidden text-2xl font-bold transition-transform rounded-full group hover:bg-[#0c1425] hover:text-[#f8faf5]">
+            <a href="/basic" before="LEARN MORE" className="relative py-2 transition-transform inline-block before:content-[attr(before)] before:py-2 before:absolute before:top-full group-hover:-translate-y-full">
+              LEARN MORE
+            </a>
           </button>
         </div>
         {/* Premium */}
@@ -115,8 +140,10 @@ export default function Pricing() {
             <li>Square footage auto-seat calculation</li>
             <li>Scenario comparison</li>
           </ul>
-          <button className=" text-2xl font-bold rounded px-5 py-2 mt-auto shadow  transition border-2 border-[#0c1425] ">
-            LEARN MORE
+          <button className="rounded border-2 border-[#0c1425] mt-auto inline-block px-5  overflow-hidden text-2xl font-bold transition-transform rounded-full group hover:bg-[#0c1425] hover:text-[#f8faf5]">
+            <a href="/premium" before="LEARN MORE" className="relative py-2 transition-transform inline-block before:content-[attr(before)] before:py-2 before:absolute before:top-full group-hover:-translate-y-full">
+              LEARN MORE
+            </a>
           </button>
         </div>
         {/* Elite */}
@@ -135,8 +162,11 @@ export default function Pricing() {
             <li>Save/manage up to 10 concepts</li>
             <li>Priority support</li>
           </ul>
-          <button className=" text-2xl font-bold rounded px-5 py-2 mt-auto shadow  transition border-2 border-[#0c1425] ">
-            LEARN MORE
+          
+          <button className="rounded border-2 border-right mt-auto inline-block px-5  overflow-hidden text-2xl font-bold transition-transform rounded-full group hover:bg-[#0c1425] hover:text-[#f8faf5]">
+            <a href="/elite" before="LEARN MORE" className="relative py-2 transition-transform inline-block before:content-[attr(before)] before:py-2 before:absolute before:top-full group-hover:-translate-y-full">
+              LEARN MORE
+            </a>
           </button>
         </div>
       </div>
