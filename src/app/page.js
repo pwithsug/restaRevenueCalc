@@ -36,7 +36,7 @@ export default function Pricing() {
         </div>
       </div>
       <div className="container mx-auto ">
-        <div className="bg-[#94B4C1] w-full  px-6 py-10 shadow-md grid grid-cols-3 gap-6">
+        <div className="bg-secondary w-full  px-6 py-10 shadow-md grid grid-cols-3 gap-6">
           <div className="flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
               <svg
@@ -148,10 +148,10 @@ export default function Pricing() {
           className="w-70 h-70 rounded-full object-cover grayscale border-4 border-[#e3f4fa]"
         />
         <div className="text-center md:text-left">
-          <div className="text-[#183a4d] text-4xl font-bold">
+          <div className="text-dark text-4xl font-bold">
             Elvis Restaino
           </div>
-          <div className="text-[#183a4d]/80 text-3xl font-bold">
+          <div className="text-dark/80 text-3xl font-bold">
             The best Restaurant Revenue Pro,
             <br />
             30+ years experience
@@ -159,7 +159,7 @@ export default function Pricing() {
         </div>
       </div>
       {/* Login link */}
-      <div className="text-center text-[#183a4d] text-2xl font-bold mb-2">
+      <div className="text-center text-dark text-2xl font-bold mb-2">
         Already a member?{" "}
         <a
           href="#"
