@@ -9,19 +9,19 @@ export default function Pricing() {
     router.push("/free");
   };
   return (
-    <div className="min-h-screen flex flex-col items-center bg-primary  text-dark">
+    <div>
       {/* Headline */}
-      <div className="bg-no-repeat bg-center bg-cover w-full" style={{backgroundImage: "url('/images/111.png')"}}>
-        <h1 className=" xl:text-5xl lg:text-4xl sm:text-3xl font-extrabold text-center mt-30 mb-12 tracking-tight">
+      <div className=" bg-center bg-cover w-full" >
+        <div className=" xl:text-5xl lg:text-4xl sm:text-3xl font-extrabold text-center xl:mt-28 sm:mt-14 mb-12">
           THE RESTAURANT PROFIT DESIGNER
-        </h1>
+        </div>
         <p className=" xl:text-4xl lg:text-3xl sm:text-2xl  text-center mb-12">
           Plan it like a pro. Dream it like a chef.
           <br className="hidden sm:inline" />
           Decide it like an investor.
         </p>
         {/* CTA */}
-        <div className="flex flex-row items-center justify-center gap-4 text-white  xl:text-2xl  md:text-xl sm:text-xl mb-20">
+        <div className="flex flex-row items-center justify-center gap-4 text-white  xl:text-2xl  md:text-xl sm:text-lg xl:mb-20 sm: mb-10">
           <button
             onClick={handleClick}
             className="2xl:w-[300px] sm:w-[240px] bg-[#a82d23] hover:bg-[#a12d1b]  font-semibold py-5 rounded-3xl transition-all duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:ring-4 focus:ring-[#a82d23]/50"

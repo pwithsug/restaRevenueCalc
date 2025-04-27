@@ -24,8 +24,10 @@ export default function RootLayout({ children }) {
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        <div className="min-h-screen flex flex-col items-center bg-no-repeat bg-cover bg-center" style={{backgroundImage: "url('/images/111.png')"}}>
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

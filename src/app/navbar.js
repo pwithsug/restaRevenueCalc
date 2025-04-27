@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 
@@ -7,11 +8,11 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-light border-b border-gray-200 px-4 py-3 md:px-8">
+    <nav className="bg-transparent w-full px-4 py-3 md:px-8">
       <div className="flex justify-between items-center mx-auto max-w-7xl">
         <div className="flex flex-row items-center">
           <img src="/images/logo.png" alt="Logo" width={48} height={48} />
-          <a href="/" className="text-xl pl-4 font-bold text-blue-600" >Elvis Restaino</a>
+          <Link href="/" className="text-xl pl-4 font-bold text-blue-600" >Elvis Restaino</Link>
         </div>
         <div className="md:hidden">
           <button

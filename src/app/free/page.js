@@ -68,17 +68,17 @@ const Free = () => {
     return profitEstimate() !== NaN && (startupCost / profitEstimate()).toFixed(2);
   };
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#b9e5ff] ">
-      <div className="w-full 2xl:max-w-xl: xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm bg-transparent">
+    <div className="min-h-screen w-full flex items-center justify-center text-white ">
+      <div className="w-full 2xl:max-w-xl: xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm bg-transparent ">
         {/* Title */}
-        <h1 className="xl:text-4xl lg:text-4xl sm:text-3xl xl:py-20 sm:py-10 font-extrabold text-center text-dark mb-4 leading-tight">
+        <h1 className="xl:text-4xl lg:text-4xl sm:text-3xl xl:py-20 sm:py-10 font-extrabold text-center  mb-4 leading-tight">
         Free Trial – Projection Calculator
         </h1>
 
         {/* Form */}
         <form className="flex flex-col gap-5 2xl:text-3xl lg:text-2xl sm:text-xl">
         <div className="flex justify-between items-center ">
-            <label className="font-semibold text-dark ">
+            <label className="font-semibold  ">
               StartUp Cost
             </label>
             <input
@@ -91,7 +91,7 @@ const Free = () => {
             />
           </div>
           <div className="flex justify-between items-center ">
-            <label className="font-semibold text-dark ">
+            <label className="font-semibold  ">
               Dining Room Seats
             </label>
             <input
@@ -105,7 +105,7 @@ const Free = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <label className="font-semibold text-dark">
+            <label className="font-semibold ">
               Bar Seats <span className="text-2xl font-normal">(optional)</span>
             </label>
             <input
@@ -118,7 +118,7 @@ const Free = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <label className="font-semibold text-dark">
+            <label className="font-semibold ">
               Average Meal Price
             </label>
             <input
@@ -132,7 +132,7 @@ const Free = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <label className="font-semibold text-dark">
+            <label className="font-semibold ">
               Average Drink Price
             </label>
             <input
@@ -146,7 +146,7 @@ const Free = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <label className="font-semibold text-dark">Days Open</label>
+            <label className="font-semibold ">Days Open</label>
             <input
               type="text"
               placeholder="5"
@@ -158,7 +158,7 @@ const Free = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <label className="font-semibold text-dark">
+            <label className="font-semibold ">
               Profit Margin
             </label>
             <input
@@ -179,7 +179,7 @@ const Free = () => {
           >
             SEE MY RESULTS
           </button> */}
-          <div className="bg-[#f9f9f9] p-5 mt-5 rounded text-dark shadow-md">
+          <div className="bg-[#f9f9f9] p-5 mt-5 rounded  shadow-md">
             <h2 className="text-2xl font-bold mb-5">Projection Summary</h2>
 
             <div className="space-y-4">
@@ -199,7 +199,7 @@ const Free = () => {
           </div>
 
           {/* Link */}
-          <div className="text-center text-2xl text-dark mt-4">
+          <div className="text-center text-2xl  mt-4">
             Want more options?{" "}
             <a href="/basic" className="underline font-semibold">
               Unlock Basic.
